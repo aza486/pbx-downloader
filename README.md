@@ -87,6 +87,8 @@ Node.js 22 oder neuer: Im Repository-Ordner **`npm test`** ausführen. Dafür is
 
 Die Basisversion wurde praktisch verwendet. Die generische Konfiguration nach Eintragen eigener Instanzen erneut live testen.
 
+Getestet und geprüft in Edge - mögliche Kompatibilität mit anderen Chromium Browsern.
+
 ## Mitgelieferte Bibliothek
 
 JXL-Decoder: `@jsquash/jxl` 1.3.0. Herkunft: [vendor/NOTICE.md](vendor/NOTICE.md). [Apache-2.0-Lizenz](vendor/jxl/LICENSE). Öffentliche Autorenangaben der Bibliothek bleiben erhalten.
