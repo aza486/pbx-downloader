@@ -1,0 +1,32 @@
+﻿:root { color-scheme: dark; font-family: 'Segoe UI', system-ui, sans-serif; color: #e7eaf3; background: #0b0e16; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(ellipse at 15% 0%, #7064ff16, transparent 55%), radial-gradient(ellipse at 95% 85%, #33d6c00b, transparent 50%); font-size: 15px; line-height: 1.65; }
+main { max-width: 860px; margin: 64px auto; padding: 40px; background: #141925; border: 1px solid #ffffff10; border-radius: 24px; box-shadow: 0 24px 80px #0005; }
+.brand { display: flex; align-items: center; gap: 18px; margin-bottom: 28px; }
+.brand img { border-radius: 12px; }
+.eyebrow { font-size: 10px; letter-spacing: .18em; color: #a6a0f8; font-weight: 700; }
+h1 { margin: 0; font-size: 28px; letter-spacing: -.04em; line-height: 1.3; }
+.badge { margin-left: auto; border: 1px solid #6ee7c42a; background: #6ee7c40b; color: #6ee7c4; border-radius: 6px; padding: 3px 9px; font-size: 10px; font-weight: 700; letter-spacing: .1em; }
+p { color: #a5aec2; }
+#source { display: inline-block; margin: 4px 0 26px; padding: 7px 12px; border: 1px solid #ffffff0d; border-radius: 8px; background: #0e131e; font-size: 13px; overflow-wrap: anywhere; }
+label { display: block; font-size: 13px; font-weight: 600; color: #cbd2e3; }
+input { width: 100%; padding: 14px 16px; margin: 8px 0 22px; border: 1px solid #30384c; border-radius: 10px; background: #0d121c; color: #eef0ff; font: 14px/1.5 ui-monospace, Consolas, monospace; }
+input::placeholder { color: #66718a; }
+input:focus { outline: 2px solid #a39aff; outline-offset: 2px; }
+.buttons { display: flex; flex-wrap: wrap; gap: 10px; }
+button { padding: 11px 16px; border: 1px solid #ffffff10; border-radius: 9px; background: #262e40; color: #e3e7f1; font: 600 13px/1.5 'Segoe UI', system-ui, sans-serif; cursor: pointer; transition: background .15s, border-color .15s; }
+button:hover:enabled { background: #333c54; border-color: #8d95b5; }
+button:focus-visible { outline: 2px solid #b3aaff; outline-offset: 3px; }
+#all, #check { background: #a398ff; color: #141126; border-color: transparent; }
+#all:hover:enabled, #check:hover:enabled { background: #b8afff; }
+button:disabled { opacity: .35; cursor: default; }
+#stop { background: #f2778610; color: #ff9ca8; border-color: #f2778625; }
+progress { appearance: none; width: 100%; margin-top: 32px; height: 8px; border: none; border-radius: 10px; overflow: hidden; background: #252d3e; accent-color: #a398ff; }
+progress::-webkit-progress-bar { background: #252d3e; border-radius: 10px; }
+progress::-webkit-progress-value { background: linear-gradient(90deg, #a398ff, #72ddcb); border-radius: 10px; }
+#status { font-weight: 600; color: #e2e7f5; white-space: pre-wrap; }
+.note { border-top: 1px solid #ffffff0d; padding-top: 22px; margin-top: 26px; font-size: 13px; color: #8c98b0; }
+#folder { margin-top: 8px; background: transparent; color: #bbb3ff; border-color: #a398ff30; }
+#errors { color: #ff9ca8; overflow-wrap: anywhere; padding-left: 20px; }
+@media (max-width: 900px) { main { margin: 20px; padding: 24px; } h1 { font-size: 23px; } .brand { gap: 12px; } .eyebrow { font-size: 9px; } }
+@media (prefers-reduced-motion: reduce) { button { transition: none; } }

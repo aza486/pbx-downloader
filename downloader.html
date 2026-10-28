@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PBX Downloader</title>
+  <link rel="icon" href="icons/icon32.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="brand"><img src="icons/icon128.png" width="56" height="56" alt=""><div><span class="eyebrow">PRINTBOX · DOWNLOAD WORKSPACE</span><h1>PBX Downloader</h1></div><span class="badge">EDGE</span></header>
+    <p>Im normalen Edge bei Printbox anmelden, das Projekt öffnen und dort das Erweiterungssymbol anklicken.</p>
+    <p id="source">Prüfe Editor-Tab …</p>
+    <form id="form">
+      <label for="project">Projekt-UUID</label>
+      <input id="project" required placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" autocomplete="off">
+      <div class="buttons">
+        <button id="check" type="submit">Bilderliste prüfen</button>
+        <button id="first" type="button" disabled>Ein Bild testen</button>
+        <button id="all" type="button" disabled>Alle herunterladen</button>
+        <button id="stop" type="button">Abbrechen &amp; schließen</button>
+      </div>
+    </form>
+    <progress id="progress" value="0" max="1"></progress>
+    <p id="status" role="status" aria-live="polite">Bereit.</p>
+    <p class="note">Dieses Fenster und den Editor-Tab während des Vorgangs geöffnet lassen.
+      Dateien landen im Edge-Downloadordner unter PrintboxDownloads/Projekt-UUID.
+      JPG und PNG bleiben unverändert. JXL und WebP werden lokal als PNG gespeichert, ohne erneute verlustbehaftete Kompression. PNG-Dateien können deutlich größer werden.
+      Die Konvertierung verwendet 8-Bit-sRGB; Metadaten und HDR-/16-Bit-Informationen werden dabei nicht vollständig erhalten.</p>
+    <button id="folder" type="button">Edge-Downloadordner öffnen</button>
+    <ul id="errors"></ul>
+  </main>
+  <script type="module" src="downloader.js"></script>
+</body>
+</html>
